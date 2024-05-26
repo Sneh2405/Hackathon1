@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOBTECH</title>
+    <link rel="stylesheet" href="body.css">
+</head>
+<body>
+    <header>
+        <img src="C:\Users\Harsh Gupta\Pictures\Logo.jpg" alt="JOBTECH Logo" id="logo">
+    </header>
+
+    <main>
+        <section id="resume-builder">
+            <h2>Personalized Internship Resume Builder</h2>
+            <form id="resume-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="skills">Skills:</label>
+                <textarea id="skills" required></textarea>
+
+                <label for="field-of-interest">Field of Interest:</label>
+                <select id="field-of-interest" required>
+                    <option value="" disabled selected>Select your field of interest</option>
+                    <option value="Software Engineering">Software Engineering</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Design">Design</option>
+                </select>
+
+                <button id="button1" type="submit">Generate Resume</button>
+            </form>
+            <div id="resume-output"></div>
+        </section>
+
+        <section id="deadline-reminders">
+            <h2>Project Reminders</h2>
+            <form id="reminder-form">
+                <label for="job-title">Project Title:</label>
+                <input type="text" id="job-title" required>
+
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline" required>
+
+                <button type="submit">Set Reminder</button>
+            </form>
+            <ul id="reminders-list"></ul>
+        </section>
+
+        <section id="networking">
+            <h3>Networking Opportunities</h3>
+            <p>Connect with professionals and peers.</p>
+            <button id="networking-btn">Explore Networking</button>
+
+            <div id="profiles">
+                <h4>Connect with Professionals</h4>
+                <div class="profile">
+                    <img src="C:/Users/Harsh Gupta/Downloads/profile1.jpg" alt="Profile 1">
+                    <div class="profile-info">
+                        <h5>Jane Doe</h5>
+                        <p>Software Engineer at TechCorp</p>
+                        <p>Jane is a seasoned software engineer with over 5 years of experience in full-stack development.</p>
+                        <button class="connect-btn">Connect</button>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="C:/Users/Harsh Gupta/Downloads/profile2.jpg" alt="Profile 2">
+                    <div class="profile-info">
+                        <h5>John Smith</h5>
+                        <p>Data Scientist at DataSolutions</p>
+                        <p>John specializes in data analysis and machine learning, with numerous projects under his belt.</p>
+                        <button class="connect-btn">Connect</button>
+                    </div>
+                </div>
+                <!-- Add more profiles as needed -->
+            </div>
+        </section>
+
+        <section id="courses">
+            <h4>Courses and Preparation Tools</h4>
+            <p>Access skill development courses and interview preparation tools.</p>
+            <button id="courses-btn">Explore Courses</button>
+
+            <div id="course-selector">
+                <h3>Select a Course</h3>
+                <select id="course-list">
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="course1">Course 1</option>
+                    <option value="course2">Course 2</option>
+                    <option value="course3">Course 3</option>
+                </select>
+                <div id="course-details">
+                    <h4 id="course-title"></h4>
+                    <p id="course-description"></p>
+                </div>
+            </div>
+            <div id="video-bar">
+                <h3>Featured Course Videos</h3>
+                <div class="video-container">
+                    <iframe id="course-video" width="560" height="315" src="https://www.youtube.com/embed/2Yk7wNfuUug" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>By team Future Finders</p>
+        <p>Contact No.: 91005 81145</p>
+        <p>Email: future.finders@gmail.com</p>
+    </footer>
+
+    <script src="document.js"></script>
+</body>
+</html>
